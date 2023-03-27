@@ -49,6 +49,20 @@ h6 {
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
+
+.img-home {
+  width: 400px;
+  border-radius: 5%;
+}
+
+.img-home-div {
+  position: absolute;
+  top: 180px;
+  right: 100px;
+  z-index: -1;
+
+}
+
 #header {
   transition: ease-in-out 0.3s;
   position: relative;
