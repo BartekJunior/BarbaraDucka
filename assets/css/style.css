@@ -444,51 +444,50 @@ section .container {
 
 
 /*--------------------------------------------------------------
-# Skills
+# Aktualnosci
 --------------------------------------------------------------*/
-
 .img-szpagat {
   width: 100%;
 }
 
 .p-news {
+  margin: 30px 0 40px;
+  line-height: 200%;
+}
+
+/*--------------------------------------------------------------
+# Recitale
+--------------------------------------------------------------*/
+.interests p {
   margin-top: 30px;
 }
 
+.interests ul {
+  list-style: none;
+  padding: 0;
+}
 
-
-/*--------------------------------------------------------------
-# Interests
---------------------------------------------------------------*/
-.interests .icon-box {
+.interests ul li {
+  margin-bottom: 20px;
   display: flex;
   align-items: center;
-  padding: 20px;
-  background: rgba(255, 255, 255, 0.08);
-  transition: ease-in-out 0.3s;
 }
 
-.interests .icon-box i {
-  font-size: 32px;
-  padding-right: 10px;
-  line-height: 1;
-}
-
-.interests .icon-box h3 {
-  font-weight: 700;
-  margin: 0;
-  padding: 0;
-  line-height: 1;
+.interests ul i {
   font-size: 16px;
-  color: #fff;
+  margin-right: 20px;
+  color: #18d26e;
+  line-height: 0;
 }
 
-.interests .icon-box:hover {
-  background: rgba(255, 255, 255, 0.12);
+.interests .bi-trophy {
+  color: #ffe70b;
 }
+
+
 
 /*--------------------------------------------------------------
-# Testimonials
+# Opinie
 --------------------------------------------------------------*/
 .testimonials .testimonials-carousel,
 .testimonials .testimonials-slider {
