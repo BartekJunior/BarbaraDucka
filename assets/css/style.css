@@ -49,27 +49,18 @@ h6 {
 # Header
 --------------------------------------------------------------*/
 
-#header .img-home {
-  width: 400px;
-  border-radius: 5%;
-}
-
-#header .img-home-div {
-  position: absolute;
-  top: 180px;
-  right: 100px;
-  z-index: -1;
-
-}
-
 #header {
   transition: ease-in-out 0.3s;
   position: relative;
   height: 100vh;
   display: flex;
   align-items: center;
-  z-index: 997;
+  z-index: 999;
   overflow-y: auto;
+}
+
+#header .container {
+  z-index: 999;
 }
 
 #header * {
