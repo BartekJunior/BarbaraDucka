@@ -5,7 +5,7 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
-(function() {
+(function () {
   "use strict";
 
   /**
@@ -48,7 +48,7 @@
   /**
    * Mobile nav toggle
    */
-  on('click', '.mobile-nav-toggle', function(e) {
+  on('click', '.mobile-nav-toggle', function (e) {
     select('#navbar').classList.toggle('navbar-mobile')
     this.classList.toggle('bi-list')
     this.classList.toggle('bi-x')
@@ -57,7 +57,7 @@
   /**
    * Scrool with ofset on links with a class name .scrollto
    */
-  on('click', '#navbar .nav-link', function(e) {
+  on('click', '#navbar .nav-link', function (e) {
     let section = select(this.hash)
     if (section) {
       e.preventDefault()
@@ -90,7 +90,7 @@
 
       if (!header.classList.contains('header-top')) {
         header.classList.add('header-top')
-        setTimeout(function() {
+        setTimeout(function () {
           sections.forEach((item) => {
             item.classList.remove('section-show')
           })
@@ -129,7 +129,7 @@
           }
         })
 
-        setTimeout(function() {
+        setTimeout(function () {
           initial_nav.classList.add('section-show')
         }, 350);
 
@@ -146,7 +146,7 @@
     new Waypoint({
       element: skilsContent,
       offset: '80%',
-      handler: function(direction) {
+      handler: function (direction) {
         let progress = select('.progress .progress-bar', true);
         progress.forEach((el) => {
           el.style.width = el.getAttribute('aria-valuenow') + '%'
@@ -197,9 +197,9 @@
 
       let portfolioFilters = select('#portfolio-flters li', true);
 
-      on('click', '#portfolio-flters li', function(e) {
+      on('click', '#portfolio-flters li', function (e) {
         e.preventDefault();
-        portfolioFilters.forEach(function(el) {
+        portfolioFilters.forEach(function (el) {
           el.classList.remove('filter-active');
         });
         this.classList.add('filter-active');
@@ -251,3 +251,21 @@
   new PureCounter();
 
 })()
+
+
+// Load the IFrame Player API code asynchronously.
+var tag = document.createElement('script');
+tag.src = "https://www.youtube.com/player_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+// Replace the 'ytplayer' element with an <iframe> and
+// YouTube player after the API code downloads.
+var player;
+function onYouTubePlayerAPIReady() {
+  player = new YT.Player('ytplayer', {
+    height: '360',
+    width: '640',
+    videoId: '5EVN22s'
+  });
+}
