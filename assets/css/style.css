@@ -62,7 +62,7 @@ h6 {
   display: flex;
   align-items: center;
   z-index: 999;
-  overflow-y: auto;
+  /* overflow-y: auto; */
 }
 
 #header .container {
